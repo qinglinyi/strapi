@@ -14,7 +14,7 @@ const getDisplayName = ({ firstname, lastname, username, email }: Partial<User> 
 
   // firstname is not required if the user is created with a username
   if (firstname) {
-    return `${firstname} ${lastname ?? ''}`.trim();
+    return `${lastname ?? ''}${firstname} `.trim();
   }
 
   return email ?? '';
