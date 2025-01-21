@@ -172,7 +172,9 @@ const ConfirmDialogPublishAll = ({
         </>
       }
       endAction={
+        // 此处修改样式 添加属性：fullWidth
         <Button
+          fullWidth
           onClick={onConfirm}
           variant="secondary"
           startIcon={<Check />}
